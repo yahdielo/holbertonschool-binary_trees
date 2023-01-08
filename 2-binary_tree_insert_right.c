@@ -1,4 +1,4 @@
-#include "binary_rees.h"
+#include "binary_trees.h"
 /**
  * binary_tree_insert_right - insert a new node  on the right
  * @value: value to be store inside node
