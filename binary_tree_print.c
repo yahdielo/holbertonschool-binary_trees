@@ -2,22 +2,22 @@
 /**
  *
  */
-void binary_tree_print(binary_tree_t *root)
+void binary_tree_print(binary_tree_t *tree)
 {
-	if (!root)
+	if (!tree)
 		return;
 	
-	if(!root->left && !root->right)
+	if(!tree->left && !tree->right)
 	{
-		printf("root data: %d\n", root->n);
+		printf("root data: %d\n", tree->n);
 		return;
 	}
 
 	//if left child exist check for leaf recursively
-	if (root->left)
-		binary_tree_print(root->left);
+	if (tree->left)
+		binary_tree_print(tree->left);
 
 	//if right child exists check for leaf recussively
-	if (root->right)
-		binary_tree_print(root->right);
+	if (tree->right)
+		binary_tree_print(tree->right);
 }
